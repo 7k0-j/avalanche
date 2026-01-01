@@ -146,7 +146,7 @@ def main():
 
     strategy = ObjectDetectionTemplate(
         model=model, optimizer=optimizer,
-        train_mb_size=BATCH_SIZE, eval_mb_size=BATCH_SIZE, train_epochs=TRAIN_EPOCHS_PER_TASK, eval_every=1,
+        train_mb_size=BATCH_SIZE, eval_mb_size=BATCH_SIZE, train_epochs=TRAIN_EPOCHS_PER_TASK,
         device=DEVICE, evaluator=evaluator
     )
 
